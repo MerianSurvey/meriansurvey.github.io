@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data · The Merian Survey</title>
+<meta name="description" content="Merian Survey data releases, catalog documentation and open-source software.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<script src="assets/js/site.js"></script>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Data</p>
+      <h1>Data releases and software</h1>
+      <p class="lede">Merian provides seven-band photometry, HSC <i>grizy</i> plus N540 and N708, for sources across the survey footprint. The software written to plan, reduce and analyze the survey is public.</p>
+    </div>
+  </section>
+
+  <section class="section" id="dr1">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Data Release 1</p>
+        <h2>DR1</h2>
+        <p>The first data release is described in <a href="https://arxiv.org/abs/2410.01884">Danieli et al. (2024)</a>. It is built from observations taken between March 2021 and March 2022.</p>
+        <div class="note">Instructions for accessing DR1 images and catalogs will be posted here.</div>
+      </div>
+      <dl class="spec">
+        <dt>Full color</dt><dd>320 deg² observed in both N540 and N708</dd>
+        <dt>Full depth</dt><dd>234 deg² at full depth in both filters</dd>
+        <dt>Bands</dt><dd>N540, N708 and HSC-SSP <i>g</i>, <i>r</i>, <i>i</i>, <i>z</i>, <i>y</i></dd>
+        <dt>Photometry</dt><dd>Aperture-matched GAaP photometry for accurate colors</dd>
+        <dt>Pipeline</dt><dd>LSST Science Pipelines, on the HSC-SSP pixel grid</dd>
+        <dt>Schema</dt><dd><a href="https://meriansurvey.github.io/merian_schemas/browser/">Catalog schema browser</a></dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section tint" id="final">
+    <div class="wrap narrow">
+      <p class="eyebrow">Looking ahead</p>
+      <h2>The final release</h2>
+      <p>The final data release will cover the entire survey area, about 733 deg² in both filters and about 584 deg² at full depth, processed with a more recent version of the LSST Science Pipelines.</p>
+    </div>
+  </section>
+
+  <section class="section" id="software">
+    <div class="wrap">
+      <p class="eyebrow">Software</p>
+      <h2>Open-source tools</h2>
+      <p class="lede">All Merian code lives in the <a href="https://github.com/MerianSurvey">MerianSurvey organization on GitHub</a>.</p>
+      <ul class="repos">
+        <li><a href="https://github.com/MerianSurvey/caterpillar">caterpillar</a><p>Image reduction and analysis pipeline for the Merian medium-band DECam survey.</p></li>
+        <li><a href="https://github.com/MerianSurvey/lambo">lambo</a><p>Model dwarf galaxies in HSC and Merian data with <code>lambo</code>, a sporty Tractor.</p></li>
+        <li><a href="https://github.com/MerianSurvey/carpenter">carpenter</a><p>Handy tools for Merian data.</p></li>
+        <li><a href="https://github.com/MerianSurvey/maria">maria</a><p>Basic tools for reading and using Merian science catalogs.</p></li>
+        <li><a href="https://github.com/MerianSurvey/skipper">skipper</a><p>Observing strategy, planning and observing scripts.</p></li>
+        <li><a href="https://github.com/MerianSurvey/merian_schemas">merian_schemas</a><p>Catalog schemas, with an online schema browser.</p></li>
+        <li><a href="https://github.com/MerianSurvey/notebooks">notebooks</a><p>Example notebooks for Merian data access with the Rubin Science Pipelines.</p></li>
+        <li><a href="https://github.com/MerianSurvey/wasp">wasp</a><p>Data reduction support.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section tint" id="cite">
+    <div class="wrap narrow">
+      <p class="eyebrow">Acknowledging Merian</p>
+      <h2>How to cite</h2>
+      <p>If you use Merian data, please cite the survey overview, <a href="https://arxiv.org/abs/2410.01884">Danieli et al. (2024)</a>. If your work relies on the filter design or the lensing forecast, please also cite <a href="https://arxiv.org/abs/2305.19310">Luo et al. (2024)</a>.</p>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

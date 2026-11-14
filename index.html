@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Merian Survey</title>
+<meta name="description" content="The Merian Survey is a medium-band imaging survey with the Dark Energy Camera. It finds star-forming dwarf galaxies at redshifts 0.06 to 0.10 and measures their dark matter halos with weak gravitational lensing.">
+<meta property="og:title" content="The Merian Survey">
+<meta property="og:description" content="A census of dwarf galaxies and their dark matter halos.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<script src="assets/js/site.js"></script>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Dark Energy Camera · Blanco 4-m · Cerro Tololo</p>
+        <h1>A census of dwarf galaxies and their <em>dark matter</em> halos</h1>
+        <p class="lede">The Merian Survey imaged about 750 square degrees of sky through two custom-built medium-band filters. Together with deep Hyper Suprime-Cam imaging, the filters pick out roughly 100,000 dwarf galaxies at redshifts between 0.06 and 0.10, enough to measure their dark matter halos with weak gravitational lensing.</p>
+        <div class="actions">
+          <a class="btn" href="science.html">Explore the science</a>
+          <a class="btn ghost" href="https://arxiv.org/abs/2410.01884">Read the survey paper</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/img/merian-logo.png" alt="The Merian Survey logo, a butterfly whose wings are filled with an image of a dwarf galaxy" width="604" height="760">
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <dl class="stats">
+      <div><dt>2 filters</dt><dd>N540 and N708, custom built for the Dark Energy Camera</dd></div>
+      <div><dt>≈ 750 deg²</dt><dd>of equatorial sky inside the HSC-SSP Wide layer</dd></div>
+      <div><dt>0.06 &lt; z &lt; 0.10</dt><dd>the redshift window where Hα and [O III] fall in the filters</dd></div>
+      <div><dt>10⁸–10⁹ M<sub>☉</sub></dt><dd>target stellar mass, similar to the Small Magellanic Cloud</dd></div>
+      <div><dt>84 nights</dt><dd>allocated on Blanco/DECam between 2021 and 2024</dd></div>
+    </dl>
+  </div>
+
+  <section class="section">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2>Two filters, two emission lines</h2>
+        <p>Dwarf galaxies are faint, and spectroscopic surveys only reach complete samples of them very nearby. Merian takes a different route.</p>
+        <p>Star-forming dwarfs shine brightly in a handful of emission lines. At redshifts between 0.06 and 0.10 the Hα line shifts into the N708 filter and the [O III] λ5007 line shifts into N540. A galaxy that is brighter in both medium bands than in the HSC broad bands around them is very likely a dwarf in this redshift window.</p>
+        <p>Drag the redshift slider to watch the lines move through the filters.</p>
+        <p><a href="survey.html"><b>More on the survey design</b></a></p>
+      </div>
+      <figure class="plate">
+        <div id="filter-figure"><noscript>This figure needs JavaScript.</noscript></div>
+        <figcaption><span class="plate-no">Plate I</span>Laboratory transmission curves of the two Merian filters, averaged over 49 positions on each filter, with a schematic spectrum of a star-forming dwarf galaxy. Line strengths are illustrative. Bars along the top mark the approximate extent of the HSC <i>g</i>, <i>r</i> and <i>i</i> bands.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="wrap">
+      <p class="eyebrow">Science</p>
+      <h2>What Merian is built to answer</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="num">I</div>
+          <h3>The dark matter halos of dwarfs</h3>
+          <p>Stacking the weak lensing signal around tens of thousands of dwarfs measures their average dark matter density profile out to the virial radius.</p>
+          <a class="more" href="science.html#halos">Dark matter</a>
+        </article>
+        <article class="card">
+          <div class="num">II</div>
+          <h3>How dwarfs assemble their mass</h3>
+          <p>Photometric redshifts reveal faint companions and satellites, and with them the build-up of low-mass galaxies.</p>
+          <a class="more" href="science.html#assembly">Mass assembly</a>
+        </article>
+        <article class="card">
+          <div class="num">III</div>
+          <h3>Star formation and feedback</h3>
+          <p>The N708 filter isolates Hα, so every Merian image is also a map of where a galaxy is forming stars.</p>
+          <a class="more" href="science.html#feedback">Star formation</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-dark">
+    <div class="wrap">
+      <p class="eyebrow">The galaxies</p>
+      <figure class="plate">
+        <img src="assets/img/dwarfs-hsc-n708.jpg" alt="Three dwarf galaxies. The top row shows blue, irregular galaxies in HSC color images. The bottom row shows the same galaxies in the Merian N708 band." width="1800" height="850" loading="lazy">
+        <figcaption><span class="plate-no">Plate II</span>Example dwarf galaxies with stellar masses of 10⁹, 10<sup>8.5</sup> and 10⁸ solar masses. Top row, HSC color images. Bottom row, the same galaxies in the Merian N708 band. Images from HSC-SSP and the Merian Survey.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <p class="eyebrow">Publications</p>
+          <h2>Recent papers</h2>
+        </div>
+        <a href="publications.html">All publications</a>
+      </div>
+      <ul class="pubs" data-pubs data-limit="3" style="margin-top:2.2rem"></ul>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="wrap namesake">
+      <div>
+        <p class="eyebrow">The name</p>
+        <h2>Maria Sibylla Merian</h2>
+        <p class="dates">1647–1717</p>
+      </div>
+      <div class="body">
+        <p>The survey honors Maria Sibylla Merian, the 17th-century naturalist and illustrator. Her fascination with the world of tiny things, combined with exceptional skill as an observer, led her to document the metamorphosis of caterpillars into butterflies in meticulous detail.</p>
+        <p>Merian the survey studies small things too. The theme carries through to the software the team has written along the way, with tools named <code>caterpillar</code>, <code>skipper</code>, <code>carpenter</code>, <code>wasp</code> and <code>maria</code>.</p>
+        <p><a href="data.html#software"><b>See the software</b></a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="data/filters.js"></script>
+<script src="data/publications.js"></script>
+<script src="assets/js/filters-figure.js"></script>
+<script src="assets/js/lists.js"></script>
+</body>
+</html>
