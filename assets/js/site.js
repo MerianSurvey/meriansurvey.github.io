@@ -3,8 +3,6 @@
 (function () {
   var NAV = [
     ["index.html", "Home"],
-    ["science.html", "Science"],
-    ["survey.html", "Survey"],
     ["data.html", "Data"],
     ["publications.html", "Publications"],
     ["team.html", "Team"]
@@ -31,14 +29,14 @@
     '<div class="foot-grid">' +
     '<div class="foot-brand"><div>' +
     "<strong>The Merian Survey</strong>" +
-    "<p>A medium-band imaging survey of dwarf galaxies with the Dark Energy Camera on the Víctor M. Blanco 4-m Telescope " +
+    "<p>A medium-band imaging survey with the Dark Energy Camera on the Víctor M. Blanco 4-m Telescope " +
     "at Cerro Tololo Inter-American Observatory, built on imaging from the Hyper Suprime-Cam Subaru Strategic Program.</p>" +
     "</div></div>" +
     "<div><h2>Pages</h2><ul>" + links.replace(/ aria-current="page"/g, "") + "</ul></div>" +
     "<div><h2>Elsewhere</h2><ul>" +
     '<li><a href="https://github.com/MerianSurvey">Merian on GitHub</a></li>' +
     '<li><a href="https://meriansurvey.github.io/merian_schemas/browser/">Catalog schema browser</a></li>' +
-    '<li><a href="https://arxiv.org/abs/2410.01884">Survey overview paper</a></li>' +
+    '<li><a href="https://doi.org/10.3847/1538-4357/ae003e">Survey paper (Danieli et al. 2025)</a></li>' +
     "</ul></div>" +
     "</div>" +
     '<p class="fine">© ' + new Date().getFullYear() + " The Merian Survey collaboration.</p>" +

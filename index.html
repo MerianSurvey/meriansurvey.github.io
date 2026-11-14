@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Merian Survey</title>
-<meta name="description" content="The Merian Survey is a medium-band imaging survey with the Dark Energy Camera. It finds star-forming dwarf galaxies at redshifts 0.06 to 0.10 and measures their dark matter halos with weak gravitational lensing.">
+<meta name="description" content="Merian is a medium-band imaging survey with the Dark Energy Camera.">
 <meta property="og:title" content="The Merian Survey">
-<meta property="og:description" content="A census of dwarf galaxies and their dark matter halos.">
+<meta property="og:description" content="THE MERIAN SURVEY">
 <link rel="icon" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,11 @@
     <div class="wrap">
       <div>
         <p class="eyebrow">Dark Energy Camera · Blanco 4-m · Cerro Tololo</p>
-        <h1>A census of dwarf galaxies and their <em>dark matter</em> halos</h1>
-        <p class="lede">The Merian Survey imaged about 750 square degrees of sky through two custom-built medium-band filters. Together with deep Hyper Suprime-Cam imaging, the filters pick out roughly 100,000 dwarf galaxies at redshifts between 0.06 and 0.10, enough to measure their dark matter halos with weak gravitational lensing.</p>
+        <h1>The Merian Survey</h1>
+        <p class="lede">Merian is an imaging survey with two custom-built medium-band filters on Blanco/DECam.</p>
         <div class="actions">
-          <a class="btn" href="science.html">Explore the science</a>
-          <a class="btn ghost" href="https://arxiv.org/abs/2410.01884">Read the survey paper</a>
+          <a class="btn" href="#science">Explore the science</a>
+          <a class="btn ghost" href="https://doi.org/10.3847/1538-4357/ae003e">Read the survey paper</a>
         </div>
       </div>
       <div class="hero-art">
@@ -35,71 +35,98 @@
     </div>
   </section>
 
-  <div class="wrap">
-    <dl class="stats">
-      <div><dt>2 filters</dt><dd>N540 and N708, custom built for the Dark Energy Camera</dd></div>
-      <div><dt>≈ 750 deg²</dt><dd>of equatorial sky inside the HSC-SSP Wide layer</dd></div>
-      <div><dt>0.06 &lt; z &lt; 0.10</dt><dd>the redshift window where Hα and [O III] fall in the filters</dd></div>
-      <div><dt>10⁸–10⁹ M<sub>☉</sub></dt><dd>target stellar mass, similar to the Small Magellanic Cloud</dd></div>
-      <div><dt>84 nights</dt><dd>allocated on Blanco/DECam between 2021 and 2024</dd></div>
-    </dl>
-  </div>
-
   <section class="section">
-    <div class="wrap split">
-      <div>
+    <div class="wrap">
+      <div class="narrow">
         <p class="eyebrow">How it works</p>
-        <h2>Two filters, two emission lines</h2>
-        <p>Dwarf galaxies are faint, and spectroscopic surveys only reach complete samples of them very nearby. Merian takes a different route.</p>
-        <p>Star-forming dwarfs shine brightly in a handful of emission lines. At redshifts between 0.06 and 0.10 the Hα line shifts into the N708 filter and the [O III] λ5007 line shifts into N540. A galaxy that is brighter in both medium bands than in the HSC broad bands around them is very likely a dwarf in this redshift window.</p>
-        <p>Drag the redshift slider to watch the lines move through the filters.</p>
-        <p><a href="survey.html"><b>More on the survey design</b></a></p>
+        <h2>Two filters, many redshifts</h2>
+        <p>Merian adds two medium-band filters, N540 and N708, to deep broad-band imaging from the Hyper Suprime-Cam Subaru Strategic Program. A strong emission line that falls inside one of the medium bands makes a galaxy brighter in that band than in the broad bands around it, which constrains its redshift.</p>
+        <p>As the redshift increases, different lines pass through the filters. Hα and [O III] fall in N708 and N540 at z ≈ 0.08, [O III] and [O II] around z ≈ 0.43, [O II] at z ≈ 0.9, and Lyα at z ≈ 3.4 and z ≈ 4.8. Drag the slider, pick a window, or click the chart under the spectrum to follow a galaxy through redshift.</p>
+        <p>More on the filter design in <a href="https://doi.org/10.1093/mnras/stae925">Luo et al. (2024)</a>.</p>
       </div>
-      <figure class="plate">
+      <figure class="plate fig-wide">
         <div id="filter-figure"><noscript>This figure needs JavaScript.</noscript></div>
-        <figcaption><span class="plate-no">Plate I</span>Laboratory transmission curves of the two Merian filters, averaged over 49 positions on each filter, with a schematic spectrum of a star-forming dwarf galaxy. Line strengths are illustrative. Bars along the top mark the approximate extent of the HSC <i>g</i>, <i>r</i> and <i>i</i> bands.</figcaption>
+        <figcaption><span class="plate-no">Plate I</span>Laboratory transmission curves of N540 and N708, averaged over 49 positions on each filter, with a schematic emission-line spectrum. Line strengths are illustrative. Bars along the top mark the approximate extent of the HSC <i>g</i>, <i>r</i> and <i>i</i> bands. The chart under the spectrum shows the redshift range over which each line falls within the half-maximum width of each filter.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section tint" id="science">
+    <div class="wrap">
+      <p class="eyebrow">Science</p>
+      <h2>Science with Merian</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="num">I</div>
+          <h3>The dark matter halos of dwarfs</h3>
+          <p>Stacking the weak lensing signal around tens of thousands of dwarf galaxies measures their average dark matter density profile out to the virial radius.</p>
+          <p class="refs">Read more in <a href="https://doi.org/10.1016/j.dark.2020.100719">Leauthaud et al. (2020)</a> and <a href="https://doi.org/10.1093/mnras/stae925">Luo et al. (2024)</a>.</p>
+        </article>
+        <article class="card">
+          <div class="num">II</div>
+          <h3>Satellites and mass assembly</h3>
+          <p>Photometric redshifts reveal faint star-forming satellites around galaxies from sub-Milky Way to Milky Way masses.</p>
+          <p class="refs">Read more in <a href="https://doi.org/10.3847/1538-4357/ae42cb">Pan et al. (2026)</a> and <a href="https://arxiv.org/abs/2610.03981">Mandacarú Guerra et al. (2026)</a>.</p>
+        </article>
+        <article class="card">
+          <div class="num">III</div>
+          <h3>Star formation and feedback</h3>
+          <p>At low redshift N708 isolates Hα, so Merian images double as maps of where galaxies are forming stars.</p>
+          <p class="refs">Read more in <a href="https://doi.org/10.3847/1538-4357/ad6861">Mintz et al. (2024)</a> and <a href="https://arxiv.org/abs/2609.26887">Mintz et al. (2026)</a>.</p>
+        </article>
+        <article class="card">
+          <div class="num">IV</div>
+          <h3>Emission-line galaxies at higher redshift</h3>
+          <p>The same two filters pick out [O III] and [O II] emitters at z ≈ 0.4 and Lyα emitters at z ≈ 3.3 and z ≈ 4.8.</p>
+          <p class="refs">Read more in <a href="https://doi.org/10.3847/1538-4357/ae003e">Danieli et al. (2025)</a>.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <div class="wrap">
+      <p class="eyebrow">Gallery</p>
+      <h2>Dwarf galaxies in Merian</h2>
+      <figure class="gallery-figure">
+        <ul class="gallery">
+          <li><img src="assets/img/gallery/3584016480410295005.jpg" alt="Galaxy with log stellar mass 7.52 at photometric redshift 0.094" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 7.52</p><p class="z">z<sub>phot</sub> = 0.094</p></li>
+          <li><img src="assets/img/gallery/3504895623675541589.jpg" alt="Galaxy with log stellar mass 7.63 at photometric redshift 0.080" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 7.63</p><p class="z">z<sub>phot</sub> = 0.080</p></li>
+          <li><img src="assets/img/gallery/3417968234383567890.jpg" alt="Galaxy with log stellar mass 7.67 at photometric redshift 0.074" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 7.67</p><p class="z">z<sub>phot</sub> = 0.074</p></li>
+          <li><img src="assets/img/gallery/3589641581897997716.jpg" alt="Galaxy with log stellar mass 7.69 at photometric redshift 0.092" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 7.69</p><p class="z">z<sub>phot</sub> = 0.092</p></li>
+          <li><img src="assets/img/gallery/3409849440524079181.jpg" alt="Galaxy with log stellar mass 7.73 at photometric redshift 0.073" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 7.73</p><p class="z">z<sub>phot</sub> = 0.073</p></li>
+          <li><img src="assets/img/gallery/3329743421370805342.jpg" alt="Galaxy with log stellar mass 7.92 at photometric redshift 0.085" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 7.92</p><p class="z">z<sub>phot</sub> = 0.085</p></li>
+          <li><img src="assets/img/gallery/3409805460058969533.jpg" alt="Galaxy with log stellar mass 8.05 at photometric redshift 0.082" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 8.05</p><p class="z">z<sub>phot</sub> = 0.082</p></li>
+          <li><img src="assets/img/gallery/3409453616338070474.jpg" alt="Galaxy with log stellar mass 8.06 at photometric redshift 0.083" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 8.06</p><p class="z">z<sub>phot</sub> = 0.083</p></li>
+          <li><img src="assets/img/gallery/3037224949870784687.jpg" alt="Galaxy with log stellar mass 8.23 at photometric redshift 0.060" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 8.23</p><p class="z">z<sub>phot</sub> = 0.060</p></li>
+          <li><img src="assets/img/gallery/3584434294828850857.jpg" alt="Galaxy with log stellar mass 8.43 at photometric redshift 0.093" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 8.43</p><p class="z">z<sub>phot</sub> = 0.093</p></li>
+          <li><img src="assets/img/gallery/3320670251418412672.jpg" alt="Galaxy with log stellar mass 8.44 at photometric redshift 0.072" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 8.44</p><p class="z">z<sub>phot</sub> = 0.072</p></li>
+          <li><img src="assets/img/gallery/3415215057267639539.jpg" alt="Galaxy with log stellar mass 8.46 at photometric redshift 0.085" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 8.46</p><p class="z">z<sub>phot</sub> = 0.085</p></li>
+          <li><img src="assets/img/gallery/3496266656420744171.jpg" alt="Galaxy with log stellar mass 8.51 at photometric redshift 0.069" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 8.51</p><p class="z">z<sub>phot</sub> = 0.069</p></li>
+          <li><img src="assets/img/gallery/3324857191696977204.jpg" alt="Galaxy with log stellar mass 8.53 at photometric redshift 0.061" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 8.53</p><p class="z">z<sub>phot</sub> = 0.061</p></li>
+          <li><img src="assets/img/gallery/3417361303965022781.jpg" alt="Galaxy with log stellar mass 8.64 at photometric redshift 0.092" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 8.64</p><p class="z">z<sub>phot</sub> = 0.092</p></li>
+          <li><img src="assets/img/gallery/3036499272196451656.jpg" alt="Galaxy with log stellar mass 8.72 at photometric redshift 0.078" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 8.72</p><p class="z">z<sub>phot</sub> = 0.078</p></li>
+          <li><img src="assets/img/gallery/3409853838570603116.jpg" alt="Galaxy with log stellar mass 8.97 at photometric redshift 0.091" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 8.97</p><p class="z">z<sub>phot</sub> = 0.091</p></li>
+          <li><img src="assets/img/gallery/3541460982368856524.jpg" alt="Galaxy with log stellar mass 8.98 at photometric redshift 0.089" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 8.98</p><p class="z">z<sub>phot</sub> = 0.089</p></li>
+          <li><img src="assets/img/gallery/3583616258177780788.jpg" alt="Galaxy with log stellar mass 9.03 at photometric redshift 0.070" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 9.03</p><p class="z">z<sub>phot</sub> = 0.070</p></li>
+          <li><img src="assets/img/gallery/3409598751872942106.jpg" alt="Galaxy with log stellar mass 9.17 at photometric redshift 0.092" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 9.17</p><p class="z">z<sub>phot</sub> = 0.092</p></li>
+          <li><img src="assets/img/gallery/3497374964141549131.jpg" alt="Galaxy with log stellar mass 9.22 at photometric redshift 0.079" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 9.22</p><p class="z">z<sub>phot</sub> = 0.079</p></li>
+          <li><img src="assets/img/gallery/3324967142859756066.jpg" alt="Galaxy with log stellar mass 9.31 at photometric redshift 0.069" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 9.31</p><p class="z">z<sub>phot</sub> = 0.069</p></li>
+          <li><img src="assets/img/gallery/3494841689351150408.jpg" alt="Galaxy with log stellar mass 9.37 at photometric redshift 0.075" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 9.37</p><p class="z">z<sub>phot</sub> = 0.075</p></li>
+          <li><img src="assets/img/gallery/3497564080141517079.jpg" alt="Galaxy with log stellar mass 9.51 at photometric redshift 0.067" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 9.51</p><p class="z">z<sub>phot</sub> = 0.067</p></li>
+          <li><img src="assets/img/gallery/3459798054750658766.jpg" alt="Galaxy with log stellar mass 9.59 at photometric redshift 0.083" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 9.59</p><p class="z">z<sub>phot</sub> = 0.083</p></li>
+          <li><img src="assets/img/gallery/3584456285061413013.jpg" alt="Galaxy with log stellar mass 9.61 at photometric redshift 0.081" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 9.61</p><p class="z">z<sub>phot</sub> = 0.081</p></li>
+          <li><img src="assets/img/gallery/3037453648289353827.jpg" alt="Galaxy with log stellar mass 9.77 at photometric redshift 0.075" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 9.77</p><p class="z">z<sub>phot</sub> = 0.075</p></li>
+          <li><img src="assets/img/gallery/3406234246291940404.jpg" alt="Galaxy with log stellar mass 9.83 at photometric redshift 0.073" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 9.83</p><p class="z">z<sub>phot</sub> = 0.073</p></li>
+          <li><img src="assets/img/gallery/3409352461268317028.jpg" alt="Galaxy with log stellar mass 9.96 at photometric redshift 0.074" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 9.96</p><p class="z">z<sub>phot</sub> = 0.074</p></li>
+          <li><img src="assets/img/gallery/3408881870291640796.jpg" alt="Galaxy with log stellar mass 10.00 at photometric redshift 0.069" width="180" height="180" loading="lazy"><p class="m">log M<sub>*</sub> = 10.00</p><p class="z">z<sub>phot</sub> = 0.069</p></li>
+        </ul>
+        <figcaption class="gallery-cap">Thirty galaxies from the Merian DR1 photometric-redshift catalog with 0.06 &lt; z<sub>phot</sub> &lt; 0.1 and 7.5 &lt; log(M<sub>*</sub>/M<sub>☉</sub>) ≤ 10, ordered by stellar mass. The labels give the stellar mass and the photometric redshift. HSC-SSP PDR3 color images from the Legacy Surveys viewer, 15″ on a side.</figcaption>
       </figure>
     </div>
   </section>
 
   <section class="section tint">
-    <div class="wrap">
-      <p class="eyebrow">Science</p>
-      <h2>What Merian is built to answer</h2>
-      <div class="cards">
-        <article class="card">
-          <div class="num">I</div>
-          <h3>The dark matter halos of dwarfs</h3>
-          <p>Stacking the weak lensing signal around tens of thousands of dwarfs measures their average dark matter density profile out to the virial radius.</p>
-          <a class="more" href="science.html#halos">Dark matter</a>
-        </article>
-        <article class="card">
-          <div class="num">II</div>
-          <h3>How dwarfs assemble their mass</h3>
-          <p>Photometric redshifts reveal faint companions and satellites, and with them the build-up of low-mass galaxies.</p>
-          <a class="more" href="science.html#assembly">Mass assembly</a>
-        </article>
-        <article class="card">
-          <div class="num">III</div>
-          <h3>Star formation and feedback</h3>
-          <p>The N708 filter isolates Hα, so every Merian image is also a map of where a galaxy is forming stars.</p>
-          <a class="more" href="science.html#feedback">Star formation</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section band-dark">
-    <div class="wrap">
-      <p class="eyebrow">The galaxies</p>
-      <figure class="plate">
-        <img src="assets/img/dwarfs-hsc-n708.jpg" alt="Three dwarf galaxies. The top row shows blue, irregular galaxies in HSC color images. The bottom row shows the same galaxies in the Merian N708 band." width="1800" height="850" loading="lazy">
-        <figcaption><span class="plate-no">Plate II</span>Example dwarf galaxies with stellar masses of 10⁹, 10<sup>8.5</sup> and 10⁸ solar masses. Top row, HSC color images. Bottom row, the same galaxies in the Merian N708 band. Images from HSC-SSP and the Merian Survey.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="section">
     <div class="wrap">
       <div class="head-row">
         <div>
@@ -112,7 +139,7 @@
     </div>
   </section>
 
-  <section class="section tint">
+  <section class="section">
     <div class="wrap namesake">
       <div>
         <p class="eyebrow">The name</p>
