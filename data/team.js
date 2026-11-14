@@ -22,6 +22,7 @@
 //   Alyson Brooks        physics.rutgers.edu faculty profile
 //   Zheng Cai            astro.tsinghua.edu.cn department profile
 //   Jim Gunn             web.astro.princeton.edu department profile
+//   Lee Kelvin           web.astro.princeton.edu department profile
 //   Stacy Kim            planetarium.osu.edu alumni profile (an older photo)
 //   Jiaxuan Li           jiaxuanli.me
 //   Mingyu Li            lmytime.com
@@ -56,8 +57,7 @@ window.MERIAN_TEAM = [
       { name: "Alyson Brooks", affiliation: "Rutgers Univ", url: "https://www.physics.rutgers.edu/~abrooks/", photo: "assets/img/team/alyson-brooks.jpg" },
       { name: "Zheng Cai", affiliation: "Tsinghua Univ", url: "https://i.astro.tsinghua.edu.cn/~zcai/", photo: "assets/img/team/zheng-cai.jpg" },
       { name: "Jim Gunn", affiliation: "Princeton Univ", url: "https://web.astro.princeton.edu/people/james-gunn", photo: "assets/img/team/jim-gunn.jpg" },
-      { name: "Benjamin Johnson", affiliation: "Center for Astrophysics | Harvard & Smithsonian", url: "https://bd-j.github.io/", photo: "" },
-      { name: "Lee Kelvin", affiliation: "Princeton Univ", url: "https://web.astro.princeton.edu/people/lee-kelvin", photo: "" },
+      { name: "Lee Kelvin", affiliation: "Princeton Univ", url: "https://web.astro.princeton.edu/people/lee-kelvin", photo: "assets/img/team/lee-kelvin.jpg" },
       { name: "Stacy Kim", affiliation: "Carnegie Observatories", url: "https://stacykim.github.io/", photo: "assets/img/team/stacy-kim.jpg" },
       { name: "Jiaxuan Li", affiliation: "KIPAC, Stanford Univ", url: "https://jiaxuanli.me/", photo: "assets/img/team/jiaxuan-li.jpg" },
       { name: "Mingyu Li", affiliation: "Tsinghua Univ", url: "https://lmytime.com/", photo: "assets/img/team/mingyu-li.jpg" },

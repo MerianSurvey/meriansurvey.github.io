@@ -57,7 +57,7 @@ and add them to the `NAV` list in `assets/js/site.js`.
 - Survey facts and numbers: Danieli et al. 2025, ApJ 993, 110 (arXiv:2410.01884), and Luo et al. 2024, MNRAS 530, 4988 (arXiv:2305.19310).
 - Publication details: SciX and Crossref, checked 2026-11-14.
 - Home-page gallery: 30 galaxies from the Merian DR1 photo-z catalog, ordered by stellar mass. The cutouts are HSC-SSP PDR3 color images from the Legacy Surveys viewer.
-- `data/filters.js`: mean of the 49 laboratory transmission measurements across each filter, resampled to 1 nm.
+- `data/filters.js`: for N540 and N708, the mean of the 49 laboratory transmission measurements across each filter, resampled to 1 nm. For HSC g, r and i, the HSC g, r2 and i2 filter transmission curves, resampled to 2 nm.
 - Team photos and links: each person's own or departmental web page (sources listed in `data/team.js`).
 - Fonts are loaded from Google Fonts (EB Garamond, Source Sans 3, IBM Plex Mono).
 

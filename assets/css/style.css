@@ -254,7 +254,30 @@ section[id], [id="filter-figure"] { scroll-margin-top: 72px; }   /* keep anchore
 .ff .line-label { fill: var(--ink); font-size: 13px; }
 .ff .line-label.in { font-weight: 500; }
 .ff .hsc { stroke: var(--ink-3); stroke-width: 1; }
+.ff .hsc-curve { fill: none; stroke: var(--ink-3); stroke-width: 1; opacity: 0.5; }
 .ff .hsc-label { fill: var(--ink-3); font-size: 12px; }
+.ff .break-label { fill: var(--ink-3); font-size: 12px; font-style: italic; font-family: var(--sans); }
+
+/* Mock-photometry strip */
+.ff-sub-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 18px; margin-top: 10px; }
+.ff-sub-head p { margin: 0; font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); }
+.ff-sub-head .nt { text-transform: none; letter-spacing: 0.04em; }
+.ff-colors { display: flex; flex-wrap: wrap; gap: 8px; }
+.ff-colors .color { font-family: var(--mono); font-size: 0.8rem; padding: 3px 10px; border: 1px solid var(--rule); border-radius: 999px; color: var(--ink-2); white-space: nowrap; }
+.ff-colors .color b { font-weight: 500; }
+.ff-colors .color.on-540 { border-color: var(--n540); color: var(--n540); background: var(--n540-soft); }
+.ff-colors .color.on-708 { border-color: var(--n708); color: var(--n708); background: var(--n708-soft); }
+.ff .ph-zero { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 5 4; }
+.ff .ph-note { fill: var(--ink-3); font-size: 11px; }
+.ff .ph-bar { stroke-width: 2; }
+.ff .ph-band.broad .ph-bar { stroke: var(--ink-3); }
+.ff .ph-band.broad .ph-mark { fill: var(--paper); stroke: var(--ink); stroke-width: 1.5; }
+.ff .ph-band.m540 .ph-bar, .ff .ph-band.m540 .ph-mark { stroke: var(--n540); fill: var(--n540); }
+.ff .ph-band.m708 .ph-bar, .ff .ph-band.m708 .ph-mark { stroke: var(--n708); fill: var(--n708); }
+.ff .ph-label { font-size: 12px; fill: var(--ink-2); }
+.ff .ph-band.m540 .ph-label { fill: var(--n540); }
+.ff .ph-band.m708 .ph-label { fill: var(--n708); }
+.ff .ph-band.out .ph-mark { opacity: 0.5; }
 
 .ff-controls { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; margin-top: 10px; }
 .ff-controls label { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); }
