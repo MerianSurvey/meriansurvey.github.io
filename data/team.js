@@ -21,6 +21,7 @@
 //   Arka Banerjee        arkabanerjee.github.io
 //   Alyson Brooks        physics.rutgers.edu faculty profile
 //   Zheng Cai            astro.tsinghua.edu.cn department profile
+//   Goni Elbaz           shanydanieli.com (Danieli group page)
 //   Jim Gunn             web.astro.princeton.edu department profile
 //   Lee Kelvin           web.astro.princeton.edu department profile
 //   Stacy Kim            planetarium.osu.edu alumni profile (an older photo)
@@ -33,6 +34,7 @@
 //   Annika Peter         astronomy.osu.edu department profile
 //   Xavier Prochaska     profxj.github.io
 //   Justin Read          surrey.ac.uk staff profile
+//   Aaron Romanowsky     sjsu.edu faculty profile
 //   Amy Sardone          steamfactory.osu.edu profile
 //   Conghao Zhou         physics.ucsc.edu graduate directory
 
@@ -47,15 +49,16 @@ window.MERIAN_TEAM = [
   {
     group: "Team members",
     people: [
-      { name: "Shany Danieli", affiliation: "Tel Aviv Univ", url: "https://shanydanieli.com/", photo: "assets/img/team/shany-danieli.jpg", role: "Builder" },
-      { name: "Yifei Luo", affiliation: "Lawrence Berkeley Lab", url: "https://www.yifei-luo.com/", photo: "assets/img/team/yifei-luo.jpg", role: "Builder" },
-      { name: "Erin Kado-Fong", affiliation: "KIPAC, Stanford Univ", url: "https://ekadofong.github.io/", photo: "assets/img/team/erin-kado-fong.jpg", role: "Builder" },
-      { name: "Song Huang", affiliation: "Tsinghua Univ", url: "https://dr-guangtou.github.io/", photo: "assets/img/team/song-huang.jpg", role: "Builder" },
-      { name: "Ting Li", affiliation: "Univ of Toronto", url: "https://sazabi4.github.io/", photo: "assets/img/team/ting-li.jpg", role: "Builder" },
+      { name: "Shany Danieli", affiliation: "Tel Aviv Univ", url: "https://shanydanieli.com/", photo: "assets/img/team/shany-danieli.jpg" },
+      { name: "Yifei Luo", affiliation: "Lawrence Berkeley Lab", url: "https://www.yifei-luo.com/", photo: "assets/img/team/yifei-luo.jpg" },
+      { name: "Erin Kado-Fong", affiliation: "KIPAC, Stanford Univ", url: "https://ekadofong.github.io/", photo: "assets/img/team/erin-kado-fong.jpg" },
+      { name: "Song Huang", affiliation: "Tsinghua Univ", url: "https://dr-guangtou.github.io/", photo: "assets/img/team/song-huang.jpg" },
+      { name: "Ting Li", affiliation: "Univ of Toronto", url: "https://sazabi4.github.io/", photo: "assets/img/team/ting-li.jpg" },
       { name: "Vivienne Baldassare", affiliation: "Washington State Univ", url: "https://viviennebaldassare.com/", photo: "assets/img/team/vivienne-baldassare.jpg" },
       { name: "Arka Banerjee", affiliation: "IISER Pune", url: "https://arkabanerjee.github.io/", photo: "assets/img/team/arka-banerjee.jpg" },
       { name: "Alyson Brooks", affiliation: "Rutgers Univ", url: "https://www.physics.rutgers.edu/~abrooks/", photo: "assets/img/team/alyson-brooks.jpg" },
       { name: "Zheng Cai", affiliation: "Tsinghua Univ", url: "https://i.astro.tsinghua.edu.cn/~zcai/", photo: "assets/img/team/zheng-cai.jpg" },
+      { name: "Goni Elbaz", affiliation: "Tel Aviv Univ", url: "https://shanydanieli.com/#team", photo: "assets/img/team/goni-elbaz.jpg" },
       { name: "Jim Gunn", affiliation: "Princeton Univ", url: "https://web.astro.princeton.edu/people/james-gunn", photo: "assets/img/team/jim-gunn.jpg" },
       { name: "Lee Kelvin", affiliation: "Princeton Univ", url: "https://web.astro.princeton.edu/people/lee-kelvin", photo: "assets/img/team/lee-kelvin.jpg" },
       { name: "Stacy Kim", affiliation: "Carnegie Observatories", url: "https://stacykim.github.io/", photo: "assets/img/team/stacy-kim.jpg" },
@@ -68,6 +71,7 @@ window.MERIAN_TEAM = [
       { name: "Annika Peter", affiliation: "Ohio State Univ", url: "https://u.osu.edu/apeter/", photo: "assets/img/team/annika-peter.jpg" },
       { name: "X. Prochaska", affiliation: "UC Santa Cruz", url: "https://profxj.github.io/", photo: "assets/img/team/xavier-prochaska.jpg" },
       { name: "Justin Read", affiliation: "Univ of Surrey", url: "https://www.surrey.ac.uk/people/justin-read", photo: "assets/img/team/justin-read.jpg" },
+      { name: "Aaron Romanowsky", affiliation: "San José State Univ", url: "https://www.sjsu.edu/people/aaron.romanowsky/", photo: "assets/img/team/aaron-romanowsky.jpg" },
       { name: "Amy Sardone", affiliation: "Ohio State Univ", url: "https://steamfactory.osu.edu/people/sardone.4", photo: "assets/img/team/amy-sardone.jpg" },
       { name: "Conghao Zhou", affiliation: "UC Santa Cruz", url: "https://zch.info/", photo: "assets/img/team/conghao-zhou.jpg" }
     ]
