@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filters · The Merian Survey</title>
+<meta name="description" content="The Merian N540 and N708 medium-band filters, their transmission curves and how they change across the filter.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<script src="assets/js/site.js"></script>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Filters</p>
+      <h1>The Merian filters</h1>
+      <p class="lede">Merian observes with two medium-band filters built for the Dark Energy Camera, N540 and N708. Together with the five HSC-SSP broad bands they give seven-band photometry.</p>
+    </div>
+  </section>
+
+  <section class="section" id="curves">
+    <div class="wrap">
+      <figure class="plate">
+        <div id="filter-curves" class="fc"><noscript>This figure needs JavaScript.</noscript></div>
+        <figcaption><span class="plate-no">Plate I</span>Laboratory transmission of N540 and N708, the unweighted mean of measurements at 49 positions on each filter, with the HSC <i>g</i>, <i>r2</i>, <i>i2</i>, <i>z</i> and <i>y</i> filter curves (gray). All curves are filter transmission alone. Move the pointer over the plot to read the values.</figcaption>
+      </figure>
+    </div>
+    <div class="wrap split fig-wide">
+      <div>
+        <p class="eyebrow">Design</p>
+        <h2>N540 and N708</h2>
+        <p>N708 was designed to catch H&alpha; and N540 to catch [O III] from the same galaxies. The design and the laboratory tests of both filters are described in <a href="https://doi.org/10.1093/mnras/stae925">Luo et al. (2024)</a>.</p>
+      </div>
+      <dl class="spec">
+        <dt>N540</dt><dd>Center 540.2 nm, width 21.1 nm at half maximum</dd>
+        <dt>N708</dt><dd>Center 710.0 nm, width 27.8 nm at half maximum</dd>
+        <dt>Design</dt><dd>Centers 540 and 708 nm, widths 21 and 27.5 nm</dd>
+        <dt>Size</dt><dd>620 mm across, 14 mm thick</dd>
+        <dt>Maker</dt><dd>Asahi Spectra, 2020 and 2021</dd>
+        <dt>Camera</dt><dd>Dark Energy Camera on the Víctor M. Blanco 4-m Telescope</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section tint" id="download">
+    <div class="wrap narrow">
+      <p class="eyebrow">Download</p>
+      <h2>Transmission curves</h2>
+      <p>The mean laboratory transmission curves of the two Merian filters are available as CSV files, with wavelength in nm and transmission from 0 to 1. They describe the filters alone, without the telescope, the camera, the detector or the atmosphere.</p>
+      <ul class="downloads">
+        <li><a href="downloads/merian_N540_transmission.csv" download>N540 transmission</a><span>CSV, 0.2 nm steps</span></li>
+        <li><a href="downloads/merian_N708_transmission.csv" download>N708 transmission</a><span>CSV, 0.2 nm steps</span></li>
+      </ul>
+      <p>The HSC team distributes <a href="https://hsc.mtk.nao.ac.jp/pipedoc/pipedoc_8_e/hsc_info_e/index.html#hsc-filters">response curves for the HSC filters</a>. Those include the atmosphere, the telescope, the camera optics and the detector as well as the filters.</p>
+    </div>
+  </section>
+
+  <section class="section" id="uniformity">
+    <div class="wrap narrow">
+      <p class="eyebrow">Across the filter</p>
+      <h2>Shifts with position</h2>
+      <p>The transmission curves move slightly with distance from the filter center. From the center to 280 mm, close to the edge of the 600 mm clear aperture, N540 shifts by about 1.1 nm to the blue and N708 by about 1.8 nm to the red.</p>
+    </div>
+    <div class="wrap">
+      <figure class="plate fig-wide">
+        <div id="filter-shifts" class="fs"><noscript>This figure needs JavaScript.</noscript></div>
+        <figcaption><span class="plate-no">Plate II</span>Laboratory transmission of N540 and N708 measured by Asahi Spectra at the filter center and at 150, 200, 250 and 280 mm from it, along one axis of the filter. The dashed lines mark the half-maximum centers at the filter center and at 280 mm. After Fig. 13 of <a href="https://doi.org/10.1093/mnras/stae925">Luo et al. (2024)</a>.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<script src="data/filters.js"></script>
+<script src="data/filter-shifts.js"></script>
+<script src="assets/js/filters-page.js"></script>
+</body>
+</html>

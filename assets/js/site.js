@@ -3,7 +3,9 @@
 (function () {
   var NAV = [
     ["index.html", "Home"],
+    ["filters.html", "Filters"],
     ["data.html", "Data"],
+    ["gallery.html", "Gallery"],
     ["publications.html", "Publications"],
     ["team.html", "Team"]
   ];
