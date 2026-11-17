@@ -40,6 +40,17 @@
         <dt>Pipeline</dt><dd>LSST Science Pipelines, on the HSC-SSP pixel grid</dd>
       </dl>
     </div>
+    <div class="wrap">
+      <figure class="plate fig-wide">
+        <div class="fp-map" data-footprint="dr1" role="img" aria-label="Map of the DR1 sky coverage in the spring and fall fields, inside the footprint of the full survey."><noscript>This figure needs JavaScript.</noscript></div>
+        <ul class="fp-legend">
+          <li><span class="sw color"></span>Full color, observed in both filters</li>
+          <li><span class="sw depth"></span>Full depth in both filters</li>
+          <li><span class="sw rest"></span>Rest of the survey, added in DR2</li>
+        </ul>
+        <figcaption><span class="plate-no">Plate I</span>Sky coverage of DR1, estimated from the effective exposure time of each survey exposure as in Danieli et al. (2025).</figcaption>
+      </figure>
+    </div>
   </section>
 
   <section class="section tint" id="final">
@@ -47,6 +58,16 @@
       <p class="eyebrow">Looking ahead</p>
       <h2>DR2</h2>
       <p>The final data release will cover the entire survey area, about 733 deg² in both filters and about 584 deg² at full depth, processed with a more recent version of the LSST Science Pipelines.</p>
+    </div>
+    <div class="wrap">
+      <figure class="plate fig-wide">
+        <div class="fp-map" data-footprint="dr2" role="img" aria-label="Map of the sky coverage of the full survey in the spring and fall fields."><noscript>This figure needs JavaScript.</noscript></div>
+        <ul class="fp-legend">
+          <li><span class="sw color"></span>Full color, observed in both filters</li>
+          <li><span class="sw depth"></span>Full depth in both filters</li>
+        </ul>
+        <figcaption><span class="plate-no">Plate II</span>Sky coverage of the full survey, which DR2 will release, estimated in the same way as for DR1.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -59,5 +80,8 @@
   </section>
 
 </main>
+
+<script src="data/footprints.js"></script>
+<script src="assets/js/footprint-figure.js"></script>
 </body>
 </html>

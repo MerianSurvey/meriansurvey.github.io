@@ -14,6 +14,7 @@ Most updates only touch the small files in `data/`.
 | Text of a page | the matching `.html` file (`index`, `data`, `publications`, `team`) |
 | Home-page gallery | the `<ul class="gallery">` list in `index.html` (images in `assets/img/gallery/`) |
 | Colors and fonts | the `:root` block at the top of `assets/css/style.css` |
+| Footprint maps on the Data page | rerun `python3 tools/make_footprints.py <exposure database FITS>`, which rewrites `data/footprints.js` |
 
 You can edit any of these in the browser on GitHub (open the file, click the pencil). The site updates about a minute after the change is committed.
 
@@ -32,6 +33,7 @@ index.html  data.html  publications.html  team.html
 assets/css/style.css         all styling
 assets/js/site.js            shared header and footer
 assets/js/filters-figure.js  interactive filter figure on the home page
+assets/js/footprint-figure.js  DR1 and DR2 sky-coverage maps on the Data page
 assets/js/lists.js           renders the publication and team lists
 assets/img/                  logo, favicon, star-field background
 assets/img/gallery/          the 30 galaxy cutouts on the home page
@@ -39,6 +41,8 @@ assets/img/team/             team photos
 data/publications.js         publication list
 data/team.js                 team roster
 data/filters.js              measured filter transmission curves (generated, see below)
+data/footprints.js           DR1 and DR2 coverage outlines (generated, see below)
+tools/make_footprints.py     makes data/footprints.js (not part of the pages)
 ```
 
 All links inside the site are relative, so it works both at
@@ -58,6 +62,7 @@ and add them to the `NAV` list in `assets/js/site.js`.
 - Publication details: SciX and Crossref, checked 2026-11-14.
 - Home-page gallery: 30 galaxies from the Merian DR1 photo-z catalog, ordered by stellar mass. The cutouts are HSC-SSP PDR3 color images from the Legacy Surveys viewer.
 - `data/filters.js`: for N540 and N708, the mean of the 49 laboratory transmission measurements across each filter, resampled to 1 nm. For HSC g, r and i, the HSC g, r2 and i2 filter transmission curves, resampled to 2 nm.
+- `data/footprints.js`: made by `tools/make_footprints.py` from the Merian copy of the DECam exposure database, with the recipe behind the areas quoted in Danieli et al. (2025). Each N708 and N540 exposure longer than 300 s counts as a circle of 3.18 deg² weighted by its effective exposure time. The drawn outlines enclose 318 and 235 deg² for DR1 (full color, full depth) and 731 and 580 deg² for the whole survey, against the quoted 320, 234, 733 and 584 deg². They are estimates from the exposures, not the coverage of the processed coadds.
 - Team photos and links: each person's own or departmental web page (sources listed in `data/team.js`).
 - Fonts are loaded from Google Fonts (EB Garamond, Source Sans 3, IBM Plex Mono).
 

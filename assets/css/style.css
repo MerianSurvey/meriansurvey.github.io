@@ -17,6 +17,8 @@
   --n540-soft: rgba(76, 122, 55, 0.17);
   --n708-soft: rgba(168, 51, 44, 0.15);
   --frame: #3b82b8;            /* the blue of the logo frame */
+  --fp-color: #c4d9ea;         /* footprint maps, both filters (frame blue on paper) */
+  --fp-rest: #ebe8e3;          /* footprint maps, rest of the survey */
   --sky: #0d111d;              /* dark bands */
   --sky-2: #171c2f;
   --on-sky: #f1ebdd;
@@ -43,6 +45,8 @@
     --n540-soft: rgba(143, 196, 108, 0.2);
     --n708-soft: rgba(227, 105, 94, 0.2);
     --frame: #5aa2d6;
+    --fp-color: #2e4d66;
+    --fp-rest: #232733;
     --sky: #090c15;
     --sky-2: #131829;
   }
@@ -314,6 +318,25 @@ section[id], [id="filter-figure"] { scroll-margin-top: 72px; }   /* keep anchore
 .ff .zw-label.in { fill: var(--ink); font-weight: 500; }
 .ff .zcursor { stroke: var(--ink); stroke-width: 1.5; }
 .ff .zcursor-label { font-size: 12px; fill: var(--ink); }
+
+/* ---------- Footprint maps (Data page) ---------- */
+
+.fp-map svg { display: block; width: 100%; height: auto; overflow: visible; }
+.fp-map text { font-family: var(--mono); font-size: 12px; fill: var(--ink-3); }
+.fp-map .strip-label { font-size: 11px; letter-spacing: 0.12em; fill: var(--ink-3); }
+.fp-map .bg { fill: var(--paper); }
+.fp-map .grid { stroke: var(--rule); stroke-width: 1; stroke-dasharray: 3 4; }
+.fp-map .frame { fill: none; stroke: var(--ink-3); stroke-width: 1; }
+.fp-map .rest, .fp-map .color, .fp-map .depth { fill-rule: evenodd; stroke: none; }
+.fp-map .rest { fill: var(--fp-rest); }
+.fp-map .color { fill: var(--fp-color); }
+.fp-map .depth { fill: var(--frame); }
+.fp-legend { display: flex; flex-wrap: wrap; gap: 8px 22px; list-style: none; margin: 14px 0 0; padding: 0; font-family: var(--mono); font-size: 0.78rem; color: var(--ink-2); }
+.fp-legend li { display: flex; align-items: center; }
+.fp-legend .sw { flex: none; width: 18px; height: 11px; margin-right: 8px; border: 1px solid var(--rule); }
+.fp-legend .sw.color { background: var(--fp-color); }
+.fp-legend .sw.depth { background: var(--frame); border-color: var(--frame); }
+.fp-legend .sw.rest { background: var(--fp-rest); }
 
 /* ---------- Cards ---------- */
 
