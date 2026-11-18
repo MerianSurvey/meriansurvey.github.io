@@ -35,6 +35,7 @@
 //   Xavier Prochaska     profxj.github.io
 //   Justin Read          surrey.ac.uk staff profile
 //   Aaron Romanowsky     sjsu.edu faculty profile
+//   Dilys Ruan           dilysruan.github.io
 //   Amy Sardone          steamfactory.osu.edu profile
 //   Conghao Zhou         physics.ucsc.edu graduate directory
 
@@ -72,6 +73,7 @@ window.MERIAN_TEAM = [
       { name: "X. Prochaska", affiliation: "UC Santa Cruz", url: "https://profxj.github.io/", photo: "assets/img/team/xavier-prochaska.jpg" },
       { name: "Justin Read", affiliation: "Univ of Surrey", url: "https://www.surrey.ac.uk/people/justin-read", photo: "assets/img/team/justin-read.jpg" },
       { name: "Aaron Romanowsky", affiliation: "San José State Univ", url: "https://www.sjsu.edu/people/aaron.romanowsky/", photo: "assets/img/team/aaron-romanowsky.jpg" },
+      { name: "Dilys Ruan", affiliation: "Rutgers Univ", url: "https://dilysruan.github.io/", photo: "assets/img/team/dilys-ruan.jpg" },
       { name: "Amy Sardone", affiliation: "Ohio State Univ", url: "https://steamfactory.osu.edu/people/sardone.4", photo: "assets/img/team/amy-sardone.jpg" },
       { name: "Conghao Zhou", affiliation: "UC Santa Cruz", url: "https://zch.info/", photo: "assets/img/team/conghao-zhou.jpg" }
     ]
