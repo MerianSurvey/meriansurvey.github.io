@@ -75,10 +75,14 @@ and add them to the `NAV` list in `assets/js/site.js`.
 - Team photos and links: each person's own or departmental web page (sources listed in `data/team.js`).
 - Fonts are loaded from Google Fonts (EB Garamond, Source Sans 3, IBM Plex Mono).
 
-## Moving the site to the MerianSurvey organization
+## Where the site lives
 
-1. In the repository on GitHub, go to Settings, then General, then Transfer ownership, and transfer it to `MerianSurvey`.
-2. Rename the repository to `MerianSurvey.github.io`. The site is then served at https://meriansurvey.github.io/.
-3. In Settings, then Pages, check that the source is still the `main` branch, root folder.
+The repository is `MerianSurvey/meriansurvey.github.io`. GitHub Pages serves its `main` branch, root folder, at https://meriansurvey.github.io/. The name of an organization site has to be in lowercase.
 
-No file needs to change, because the site uses relative links throughout.
+The site started as `yluo54301/merian-survey` and moved to the MerianSurvey organization on 2026-11-18. GitHub redirects the old repository address, but the old site address https://yluo54301.github.io/merian-survey/ no longer works. A copy cloned before the move can be pointed at the new repository with
+
+```bash
+git remote set-url origin https://github.com/MerianSurvey/meriansurvey.github.io.git
+```
+
+Do not create a new `merian-survey` repository under `yluo54301`, or GitHub drops the redirect.
