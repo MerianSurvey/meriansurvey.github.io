@@ -397,6 +397,15 @@ section[id], [id="filter-figure"] { scroll-margin-top: 72px; }   /* keep anchore
 .fs-sketch .dot.r4 { fill: var(--ring-4); }
 @media (max-width: 600px) { .fs-legend { align-items: flex-start; } .fs .fs-sketch { width: 72px; height: 72px; } }
 
+/* Depth figure on the Data page (uses the .fc curve styles) */
+.dp .bar { stroke-width: 6; stroke-linecap: round; }
+.dp .bar.hsc { stroke: var(--ink-3); }
+.dp .bar.m540 { stroke: var(--n540); }
+.dp .bar.m708 { stroke: var(--n708); }
+.dp .val { font-size: 12px; fill: var(--ink-2); }
+.dp .val .t540, .dp .val .t708 { font-size: inherit; }
+.dp .val .hsc-name { font-style: italic; }
+
 .downloads { list-style: none; margin: 1.4rem 0; padding: 0; }
 .downloads li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 11px 0; border-top: 1px solid var(--rule); }
 .downloads li:last-child { border-bottom: 1px solid var(--rule); }

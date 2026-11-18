@@ -36,6 +36,7 @@
         <dt>Full color</dt><dd>320 deg² observed in both N540 and N708</dd>
         <dt>Full depth</dt><dd>234 deg² at full depth in both filters</dd>
         <dt>Bands</dt><dd>N540, N708 and HSC-SSP <i>g</i>, <i>r</i>, <i>i</i>, <i>z</i>, <i>y</i></dd>
+        <dt>Depth</dt><dd>25.3 mag in N540 and 24.9 mag in N708, 5σ for point sources</dd>
         <dt>Photometry</dt><dd>Aperture-matched GAaP photometry for accurate colors</dd>
         <dt>Pipeline</dt><dd>LSST Science Pipelines, on the HSC-SSP pixel grid</dd>
       </dl>
@@ -49,6 +50,10 @@
           <li><span class="sw rest"></span>Rest of the survey, added in DR2</li>
         </ul>
         <figcaption><span class="plate-no">Plate I</span>Sky coverage of DR1, estimated from the effective exposure time of each survey exposure as in Danieli et al. (2025).</figcaption>
+      </figure>
+      <figure class="plate fig-wide">
+        <div id="depth-figure" class="fc dp" role="img" aria-label="5-sigma point-source depth in each filter. N540 25.3, N708 24.9, HSC g 26.5, r 26.5, i 26.2, z 25.2 and y 24.4 mag."><noscript>5σ point-source depth. N540 25.3, N708 24.9, g 26.5, r 26.5, i 26.2, z 25.2, y 24.4 mag.</noscript></div>
+        <figcaption><span class="plate-no">Plate II</span>5σ point-source depth in each filter, the median over the Merian DR1 footprint for N540 and N708 and over the HSC-SSP Wide layer for <i>g</i>, <i>r</i>, <i>i</i>, <i>z</i> and <i>y</i> (<a href="https://doi.org/10.1093/pasj/psab122">Aihara et al. 2022</a>), as compiled in the Merian photo-z paper (Luo et al., in prep.). Each bar spans the half-maximum width of its filter, and the filter transmission curves are shown below.</figcaption>
       </figure>
     </div>
   </section>
@@ -66,7 +71,7 @@
           <li><span class="sw color"></span>Full color, observed in both filters</li>
           <li><span class="sw depth"></span>Full depth in both filters</li>
         </ul>
-        <figcaption><span class="plate-no">Plate II</span>Sky coverage of the full survey, which DR2 will release, estimated in the same way as for DR1.</figcaption>
+        <figcaption><span class="plate-no">Plate III</span>Sky coverage of the full survey, which DR2 will release, estimated in the same way as for DR1.</figcaption>
       </figure>
     </div>
   </section>
@@ -83,5 +88,8 @@
 
 <script src="data/footprints.js"></script>
 <script src="assets/js/footprint-figure.js"></script>
+<script src="data/filters.js"></script>
+<script src="data/depths.js"></script>
+<script src="assets/js/depth-figure.js"></script>
 </body>
 </html>
