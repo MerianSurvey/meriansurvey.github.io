@@ -11,7 +11,8 @@ Most updates only touch the small files in `data/`.
 | Publication list | `data/publications.js` (copy a block, paste it at the top, fill it in; `survey: true` puts a paper in the survey-papers block) |
 | Team roster, photos, links | `data/team.js` (photos live in `assets/img/team/`) |
 | Menu, header, footer | `assets/js/site.js` |
-| Text of a page | the matching `.html` file (`index`, `filters`, `data`, `gallery`, `publications`, `team`) |
+| Text of a page | the matching `.html` file (`index`, `filters`, `data`, `gallery`, `publications`, `team`, `viewer`) |
+| Link to the internal sky viewer | the `Open the viewer` button in `viewer.html` |
 | Gallery | the `<ul class="gallery big">` list in `gallery.html` (images in `assets/img/gallery/`) |
 | Colors and fonts | the `:root` block at the top of `assets/css/style.css` |
 | Filter depths on the Data page | `data/depths.js` |
@@ -31,7 +32,7 @@ Then open http://localhost:8765 in a browser.
 ## Layout
 
 ```
-index.html  filters.html  data.html  gallery.html  publications.html  team.html
+index.html  filters.html  data.html  gallery.html  publications.html  team.html  viewer.html
 assets/css/style.css         all styling
 assets/js/site.js            shared header and footer
 assets/js/filters-figure.js  interactive filter figure on the home page

@@ -7,7 +7,8 @@
     ["data.html", "Data"],
     ["gallery.html", "Gallery"],
     ["publications.html", "Publications"],
-    ["team.html", "Team"]
+    ["team.html", "Team"],
+    ["viewer.html", "Viewer (internal)"]
   ];
 
   var here = location.pathname.split("/").pop() || "index.html";
