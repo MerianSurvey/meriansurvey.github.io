@@ -19,7 +19,7 @@
 //   Ting Li              sazabi4.github.io
 //   Vivienne Baldassare  viviennebaldassare.com
 //   Arka Banerjee        arkabanerjee.github.io
-//   Alyson Brooks        physics.rutgers.edu faculty profile
+//   Alyson Brooks        headshot sent by Alyson Brooks (2026-11-19)
 //   Zheng Cai            astro.tsinghua.edu.cn department profile
 //   Akaxia Cruz          simonsfoundation.org staff profile (Flatiron Institute)
 //   Goni Elbaz           shanydanieli.com (Danieli group page)
