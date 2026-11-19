@@ -3,6 +3,7 @@
    Plain CSS, no build step. Colours and fonts are set once in :root below.
    The two accent colours stand for the two Merian filters:
    N540 (green, 540 nm) and N708 (deep red, 708 nm).
+   Links are blue (--link), close to the blue of the logo frame.
    ========================================================================== */
 
 :root {
@@ -17,6 +18,7 @@
   --n540-soft: rgba(76, 122, 55, 0.17);
   --n708-soft: rgba(168, 51, 44, 0.15);
   --frame: #3b82b8;            /* the blue of the logo frame */
+  --link: #2f72a8;             /* link underlines and hover, a little darker than --frame so text stays readable */
   --fp-color: #c4d9ea;         /* footprint maps, both filters (frame blue on paper) */
   --fp-rest: #ebe8e3;          /* footprint maps, rest of the survey */
   --ring-0: #86b4dc;           /* Filters page: distance from the filter center, 0 to 280 mm */
@@ -50,6 +52,7 @@
     --n540-soft: rgba(143, 196, 108, 0.2);
     --n708-soft: rgba(227, 105, 94, 0.2);
     --frame: #5aa2d6;
+    --link: #5aa2d6;
     --fp-color: #2e4d66;
     --fp-rest: #232733;
     --ring-0: #3d6a93;
@@ -88,11 +91,11 @@ img, svg { max-width: 100%; height: auto; display: block; }
 
 a {
   color: inherit;
-  text-decoration-color: var(--n708);
+  text-decoration-color: var(--link);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;
 }
-a:hover { color: var(--n708); }
+a:hover { color: var(--link); }
 
 :focus-visible { outline: 2px solid var(--frame); outline-offset: 3px; border-radius: 2px; }
 
@@ -160,7 +163,7 @@ section[id], [id="filter-figure"] { scroll-margin-top: 72px; }   /* keep anchore
   border-bottom: 2px solid transparent;
 }
 .site-nav a:hover { color: inherit; border-bottom-color: var(--rule); }
-.site-nav a[aria-current="page"] { border-bottom-color: var(--n708); }
+.site-nav a[aria-current="page"] { border-bottom-color: var(--link); }
 
 .nav-toggle {
   display: none;
@@ -177,7 +180,7 @@ section[id], [id="filter-figure"] { scroll-margin-top: 72px; }   /* keep anchore
   .site-nav ul { flex-direction: column; gap: 0; padding: 6px var(--gutter) 14px; }
   .site-nav a { display: block; padding: 12px 0; border-bottom: 1px solid var(--rule); }
   .site-nav li:last-child a { border-bottom: 0; }
-  .site-nav a[aria-current="page"] { border-bottom-color: var(--rule); color: var(--n708); }
+  .site-nav a[aria-current="page"] { border-bottom-color: var(--rule); color: var(--link); }
 }
 
 /* ---------- Home hero ---------- */
@@ -526,7 +529,7 @@ td code, p code, li code { font-family: var(--mono); font-size: 0.9em; }
 .pub .yr { font-family: var(--mono); font-size: 0.9rem; color: var(--ink-3); padding-top: 6px; }
 .pub h3 { font-size: 1.42rem; margin: 0 0 6px; text-wrap: pretty; }
 .pub h3 a { text-decoration: none; }
-.pub h3 a:hover { text-decoration: underline; text-decoration-color: var(--n708); }
+.pub h3 a:hover { text-decoration: underline; text-decoration-color: var(--link); }
 .pub .authors { color: var(--ink-2); margin: 0 0 8px; font-size: 0.98rem; }
 .pub .meta { font-family: var(--mono); font-size: 0.8rem; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0; }
 .pub .tag { color: var(--n540); }
@@ -547,7 +550,7 @@ td code, p code, li code { font-family: var(--mono); font-size: 0.9em; }
 .who { min-width: 0; }
 .who b { display: block; font-weight: 600; }
 .who b a { text-decoration: none; }
-.who b a:hover { text-decoration: underline; text-decoration-color: var(--n708); color: inherit; }
+.who b a:hover { text-decoration: underline; text-decoration-color: var(--link); color: inherit; }
 .who .aff { display: block; color: var(--ink-2); font-size: 0.95rem; }
 .role {
   display: inline-block; margin: 3px 0 3px; padding: 1px 8px; border: 1px solid currentColor; border-radius: 999px;

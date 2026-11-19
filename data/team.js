@@ -21,7 +21,9 @@
 //   Arka Banerjee        arkabanerjee.github.io
 //   Alyson Brooks        physics.rutgers.edu faculty profile
 //   Zheng Cai            astro.tsinghua.edu.cn department profile
+//   Akaxia Cruz          simonsfoundation.org staff profile (Flatiron Institute)
 //   Goni Elbaz           shanydanieli.com (Danieli group page)
+//   Robel Geda           robelgeda.com
 //   Jim Gunn             web.astro.princeton.edu department profile
 //   Lee Kelvin           web.astro.princeton.edu department profile
 //   Stacy Kim            planetarium.osu.edu alumni profile (an older photo)
@@ -59,7 +61,9 @@ window.MERIAN_TEAM = [
       { name: "Arka Banerjee", affiliation: "IISER Pune", url: "https://arkabanerjee.github.io/", photo: "assets/img/team/arka-banerjee.jpg" },
       { name: "Alyson Brooks", affiliation: "Rutgers Univ", url: "https://www.physics.rutgers.edu/~abrooks/", photo: "assets/img/team/alyson-brooks.jpg" },
       { name: "Zheng Cai", affiliation: "Tsinghua Univ", url: "https://i.astro.tsinghua.edu.cn/~zcai/", photo: "assets/img/team/zheng-cai.jpg" },
+      { name: "Akaxia Cruz", affiliation: "Flatiron Institute", url: "https://www.simonsfoundation.org/people/akaxia-cruz/", photo: "assets/img/team/akaxia-cruz.jpg" },
       { name: "Goni Elbaz", affiliation: "Tel Aviv Univ", url: "https://shanydanieli.com/#team", photo: "assets/img/team/goni-elbaz.jpg" },
+      { name: "Robel Geda", affiliation: "Princeton Univ", url: "https://robelgeda.com/", photo: "assets/img/team/robel-geda.jpg" },
       { name: "Jim Gunn", affiliation: "Princeton Univ", url: "https://web.astro.princeton.edu/people/james-gunn", photo: "assets/img/team/jim-gunn.jpg" },
       { name: "Lee Kelvin", affiliation: "Princeton Univ", url: "https://web.astro.princeton.edu/people/lee-kelvin", photo: "assets/img/team/lee-kelvin.jpg" },
       { name: "Stacy Kim", affiliation: "Carnegie Observatories", url: "https://stacykim.github.io/", photo: "assets/img/team/stacy-kim.jpg" },

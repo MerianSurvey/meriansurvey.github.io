@@ -12,7 +12,7 @@ Most updates only touch the small files in `data/`.
 | Team roster, photos, links | `data/team.js` (photos live in `assets/img/team/`) |
 | Menu, header, footer | `assets/js/site.js` |
 | Text of a page | the matching `.html` file (`index`, `filters`, `data`, `gallery`, `publications`, `team`, `viewer`) |
-| Link to the internal sky viewer | the `Open the viewer` button in `viewer.html` |
+| Link to the internal sky viewer, and who to contact for its login | the `Open the viewer` button and the paragraph above it in `viewer.html` |
 | Gallery | the `<ul class="gallery big">` list in `gallery.html` (images in `assets/img/gallery/`) |
 | Colors and fonts | the `:root` block at the top of `assets/css/style.css` |
 | Filter depths on the Data page | `data/depths.js` |
