@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The pages search engines should list, in menu order. Add a <url> line
+     when you add a page. viewer.html is left out on purpose, because it is
+     internal and carries a noindex tag. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://meriansurvey.github.io/</loc></url>
+  <url><loc>https://meriansurvey.github.io/filters.html</loc></url>
+  <url><loc>https://meriansurvey.github.io/data.html</loc></url>
+  <url><loc>https://meriansurvey.github.io/gallery.html</loc></url>
+  <url><loc>https://meriansurvey.github.io/publications.html</loc></url>
+  <url><loc>https://meriansurvey.github.io/team.html</loc></url>
+</urlset>

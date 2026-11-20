@@ -13,6 +13,7 @@ Most updates only touch the small files in `data/`.
 | Menu, header, footer | `assets/js/site.js` |
 | Text of a page | the matching `.html` file (`index`, `filters`, `data`, `gallery`, `publications`, `team`, `viewer`) |
 | Link to the internal sky viewer, and who to contact for its login | the `Open the viewer` button and the paragraph above it in `viewer.html` |
+| Pages that search engines list | `sitemap.xml` (add a line when you add a page, unless the page should stay out of search results like `viewer.html`) |
 | Gallery | the `<ul class="gallery big">` list in `gallery.html` (images in `assets/img/gallery/`) |
 | Colors and fonts | the `:root` block at the top of `assets/css/style.css` |
 | Filter depths on the Data page | `data/depths.js` |
@@ -33,6 +34,8 @@ Then open http://localhost:8765 in a browser.
 
 ```
 index.html  filters.html  data.html  gallery.html  publications.html  team.html  viewer.html
+robots.txt                   lets search engines crawl every page and points them to the sitemap
+sitemap.xml                  the pages search engines should list (every page but viewer.html)
 assets/css/style.css         all styling
 assets/js/site.js            shared header and footer
 assets/js/filters-figure.js  interactive filter figure on the home page
@@ -79,6 +82,8 @@ and add them to the `NAV` list in `assets/js/site.js`.
 ## Where the site lives
 
 The repository is `MerianSurvey/meriansurvey.github.io`. GitHub Pages serves its `main` branch, root folder, at https://meriansurvey.github.io/. The name of an organization site has to be in lowercase.
+
+The site is verified in Google Search Console (the property is run by Yifei Luo) through the `google-site-verification` tag in the `<head>` of `index.html`. Keep that tag, or the property loses its verification. `sitemap.xml` and `robots.txt` at the root are there for search engines.
 
 The site started as `yluo54301/merian-survey` and moved to the MerianSurvey organization on 2026-11-18. GitHub redirects the old repository address, but the old site address https://yluo54301.github.io/merian-survey/ no longer works. A copy cloned before the move can be pointed at the new repository with
 

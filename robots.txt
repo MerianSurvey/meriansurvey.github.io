@@ -1,0 +1,7 @@
+# Search engines may crawl every page. viewer.html keeps itself out of
+# search results with its own noindex tag, which a crawler can only see if
+# it is allowed to fetch the page, so do not block it here.
+User-agent: *
+Allow: /
+
+Sitemap: https://meriansurvey.github.io/sitemap.xml
