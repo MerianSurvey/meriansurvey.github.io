@@ -8,6 +8,7 @@
     ["gallery.html", "Gallery"],
     ["publications.html", "Publications"],
     ["team.html", "Team"],
+    ["viewer-public.html", "Viewer (public)"],
     ["viewer.html", "Viewer (internal)"]
   ];
 
