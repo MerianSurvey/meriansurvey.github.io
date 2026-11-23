@@ -11,10 +11,9 @@ Most updates only touch the small files in `data/`.
 | Publication list | `data/publications.js` (copy a block, paste it at the top, fill it in; `survey: true` puts a paper in the survey-papers block) |
 | Team roster, photos, links | `data/team.js` (photos live in `assets/img/team/`) |
 | Menu, header, footer | `assets/js/site.js` |
-| Text of a page | the matching `.html` file (`index`, `filters`, `data`, `gallery`, `publications`, `team`, `viewer-public`, `viewer`) |
-| Link to the public sky viewer | the `Open the viewer` button in `viewer-public.html` |
-| Link to the internal sky viewer, and who to contact for its login | the `Open the viewer` button and the paragraph above it in `viewer.html` |
-| Pages that search engines list | `sitemap.xml` (add a line when you add a page, unless the page should stay out of search results like `viewer.html`) |
+| Text of a page | the matching `.html` file (`index`, `filters`, `data`, `gallery`, `publications`, `team`, `viewer`) |
+| Links to the public and internal sky viewers, and who to contact for the internal login | the `Viewer (public)` and `Viewer (internal)` buttons and the paragraph above them in `viewer.html` |
+| Pages that search engines list | `sitemap.xml` (add a line when you add a page) |
 | Gallery | the `<ul class="gallery big">` list in `gallery.html` (images in `assets/img/gallery/`) |
 | Colors and fonts | the `:root` block at the top of `assets/css/style.css` |
 | Filter depths on the Data page | `data/depths.js` |
@@ -34,10 +33,9 @@ Then open http://localhost:8765 in a browser.
 ## Layout
 
 ```
-index.html  filters.html  data.html  gallery.html  publications.html  team.html
-viewer-public.html  viewer.html
+index.html  filters.html  data.html  gallery.html  publications.html  team.html  viewer.html
 robots.txt                   lets search engines crawl every page and points them to the sitemap
-sitemap.xml                  the pages search engines should list (every page but viewer.html)
+sitemap.xml                  the pages search engines should list (all of them)
 assets/css/style.css         all styling
 assets/js/site.js            shared header and footer
 assets/js/filters-figure.js  interactive filter figure on the home page
